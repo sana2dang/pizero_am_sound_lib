@@ -53,11 +53,11 @@ function on_signal( sig )
 	switch ( sig )	
 	{
 		case "up":
-			move_sound();
+			//move_sound();
 			fe.signal( "prev_game" );
 			return true;
 		case "down":
-			move_sound();
+			//move_sound();
 			fe.signal( "next_game");
 			return true;		
 		case "left":
