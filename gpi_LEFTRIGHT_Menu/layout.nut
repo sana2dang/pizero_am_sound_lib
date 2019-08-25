@@ -125,11 +125,26 @@ fe.add_signal_handler( "Navigation" );
 	selCursor2.set_rgb( 255,255,255);
 	//selCursor1.alpha = 150;
 	//selCursor2.alpha = 150;
+
 	
+local bgMusic;
+local bgMusicPlay = false;
 
 if( my_config["bgmYn"] == "Y" )
 {
-	//local bgMusic = fe.add_sound("bgMusic.mp3")
-	local bgMusic = fe.add_sound(my_config["bgmName"])
-	bgMusic.playing=true
+	bgMusic = fe.add_sound(my_config["bgmName"]);
+	bgMusicPlay = true;
 }
+
+function update_clock( ttime )
+{
+	// bgMusic loop
+	if( bgMusicPlay == true )
+	{
+		if( !bgMusic.playing )
+		{
+			bgMusic.playing = true;
+		}
+	}
+}
+fe.add_ticks_callback( this, "update_clock" );
