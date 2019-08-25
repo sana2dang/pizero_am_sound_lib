@@ -95,7 +95,7 @@ function on_signal( sig )
 function move_sound()
 {
 	// 커서 이동시 사운드 설정
-	//local selectMusic = fe.add_sound("select.mp3");
+	local selectMusic = fe.add_sound("select.mp3");
 	selectMusic.playing=true;
 }
 
