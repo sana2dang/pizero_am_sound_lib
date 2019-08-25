@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo cp ./* /opt/retropie/supplementary/attractmode/sfml/lib/
 
 cp -r ./gpi_h_Fly9p_Theme/layout.nut /opt/retropie/configs/all/attractmode/layouts/gpi_h_Fly9p_Theme/layout.nut
