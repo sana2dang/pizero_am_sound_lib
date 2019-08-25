@@ -288,7 +288,7 @@ class Grid extends Conveyor
 			{
 				sel_y--;
 				update_frame();
-				move_sound();
+				//move_sound();
 			}
 			else if ( !vert_flow )
 			{
@@ -302,7 +302,7 @@ class Grid extends Conveyor
 				{
 					sel_y--;
 					update_frame();
-					move_sound();
+					//move_sound();
 				}
 				
 			}
@@ -326,7 +326,7 @@ class Grid extends Conveyor
 					sel_x--;
 					sel_y = rows - 1; 
 					update_frame();
-					move_sound();
+					//move_sound();
 				}
 			}
 			return true;
@@ -336,7 +336,7 @@ class Grid extends Conveyor
 			{
 				sel_y++;
 				update_frame();
-				move_sound();
+				//move_sound();
 			}
 			else if ( !vert_flow )
 			{
@@ -350,7 +350,7 @@ class Grid extends Conveyor
 				{
 					sel_y++;
 					update_frame();
-					move_sound();
+					//move_sound();
 				}
 				
 			}
@@ -375,7 +375,7 @@ class Grid extends Conveyor
 					sel_y = 0;
 					sel_x++;
 					update_frame();
-					move_sound();
+					//move_sound();
 				}	
 
 			}			
@@ -386,13 +386,13 @@ class Grid extends Conveyor
 			{
 				sel_x--;
 				update_frame();
-				move_sound();
+				//move_sound();
 			}
 			else if ( !vert_flow && ( sel_x > 0 ) )
 			{
 				sel_x--;
 				update_frame();
-				move_sound();
+				//move_sound();
 			}
 			else if ( !vert_flow && ( sel_x == 0 ) )
 			{
@@ -408,7 +408,7 @@ class Grid extends Conveyor
 					sel_x = cols-1;
 					sel_y--;
 					update_frame();
-					move_sound();
+					//move_sound();
 				}
 			}
 			else	// 화면 막다른 곳에 위치했을 때( 좌측 )
@@ -430,7 +430,7 @@ class Grid extends Conveyor
 			{
 				sel_x++;								
 				update_frame();
-				move_sound();
+				//move_sound();
 			}
 			else if ( !vert_flow && ( sel_x >= 0 ) )
 			{
@@ -449,14 +449,14 @@ class Grid extends Conveyor
 						sel_x=0;
 						sel_y++;
 						update_frame();	
-						move_sound();
+						//move_sound();
 					}
 				}
 				else
 				{
 					sel_x++;
 					update_frame();
-					move_sound();
+					//move_sound();
 				}
 
 			}			
@@ -520,14 +520,14 @@ class Grid extends Conveyor
 				if( command == 0 )	// 예
 				{
 					update_frame();
-					move_sound();
+					//move_sound();
 					enabled=true; // re-enable conveyor
 					return false;
 				}
 				else
 				{
 					update_frame();
-					move_sound();
+					//move_sound();
 					enabled=true; // re-enable conveyor
 					return true;				
 				}
@@ -555,7 +555,7 @@ class Grid extends Conveyor
 
 
 			update_frame();
-			move_sound();
+			//move_sound();
 			enabled=true; // re-enable conveyor
 			break;
 
