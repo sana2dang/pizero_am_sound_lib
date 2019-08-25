@@ -10,5 +10,5 @@ pi0 용 어트랙트모드 사운드 출력 lib
  
  sudo chmod 755 install.sh
  
- sudo ./install.sh
+ ./install.sh
 
